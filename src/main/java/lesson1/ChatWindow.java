@@ -1,3 +1,5 @@
+package lesson1;
+
 import javax.swing.*;
 import javax.swing.text.MaskFormatter;
 import java.awt.*;
