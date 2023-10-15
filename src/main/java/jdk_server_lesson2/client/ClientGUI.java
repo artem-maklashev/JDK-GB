@@ -21,15 +21,18 @@ public class ClientGUI extends JFrame implements ClientView{
 
     public ClientGUI(Server server){
         this.client = new Client(this, server);
-
         setSize(WIDTH, HEIGHT);
         setResizable(false);
         setTitle("Chat client");
-        setLocation(server.getX() - 500, server.getY());
+        setLocation(getCenter().width/2 - 500, getCenter().height/2-HEIGHT/2);
 
         createPanel();
 
         setVisible(true);
+    }
+
+    private Dimension getCenter() {
+        return Toolkit.getDefaultToolkit().getScreenSize();
     }
 
     private void connectToServer() {

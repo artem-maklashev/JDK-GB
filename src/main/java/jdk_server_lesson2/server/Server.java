@@ -24,7 +24,10 @@ public class Server {
 
     public void stopServer(){
         work = false;
-        for (int i = 0; i < clientList.size(); i++) disconnectUser(clientList.get(i));
+        for (int i = clientList.size()-1; i >=0  ; i--) {
+            disconnectUser(clientList.get(i));
+
+        }
     }
     public boolean connectUser(Client client){
         if (!work) {
@@ -61,6 +64,7 @@ public class Server {
     }
 
     private void appendLog(String text) {
+        serverView.appendLog(text);
     }
 
     public String getHistory(){
@@ -75,11 +79,4 @@ public class Server {
         return work;
     }
 
-    public int getX() {
-        return 0;
-    }
-
-    public int getY() {
-        return 0;
-    }
 }

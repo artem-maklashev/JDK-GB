@@ -16,13 +16,14 @@ public class ServerWindow extends JFrame implements ServerView {
     public ServerWindow(){
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(WIDTH, HEIGHT);
+
         setResizable(false);
         setTitle("Chat server");
         setLocationRelativeTo(null);
 
         createPanel();
 
-                setVisible(true);
+        setVisible(true);
     }
 
     @Override
@@ -69,16 +70,6 @@ public class ServerWindow extends JFrame implements ServerView {
         panel.add(btnStop);
         return panel;
     }
-
-    @Override
-    public int getX() {
-        return this.getLocation().x;
-    }
-    @Override
-    public int getY() {
-        return this.getLocation().y;
-    }
-
 
     @Override
     public void setServer(Server server) {

@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48951abb-b4e3-4de9-98dd-821c1a4961a5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="48951abb-b4e3-4de9-98dd-821c1a4961a5" name="Changes" comment="Hw2 in progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jdk_server_lesson2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdk_server_lesson2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jdk_server_lesson2/client/ClientGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdk_server_lesson2/client/ClientGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jdk_server_lesson2/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdk_server_lesson2/server/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jdk_server_lesson2/server/ServerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdk_server_lesson2/server/ServerView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jdk_server_lesson2/server/ServerWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdk_server_lesson2/server/ServerWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jdk_server_lesson2/server/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdk_server_lesson2/server/Storage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jdk_server_lesson2/server/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdk_server_lesson2/server/log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +51,15 @@
       <option name="presentableId" value="Default" />
       <updated>1697290895494</updated>
     </task>
+    <task id="LOCAL-00001" summary="Hw2 in progress">
+      <option name="closed" value="true" />
+      <created>1697344946685</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697344946685</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -77,6 +84,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Hw2 in progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hw2 in progress" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
