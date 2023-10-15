@@ -4,8 +4,8 @@ import jdk_server_lesson2.server.Server;
 
 public class Client {
     private String name;
-    private ClientView clientView;
-    private Server server;
+    private final ClientView clientView;
+    private final Server server;
     private boolean connected;
 
     public Client(ClientView clientView, Server serverWindow) {

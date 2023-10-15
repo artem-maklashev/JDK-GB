@@ -11,7 +11,7 @@ public class Main {
         ServerView serverView= new ServerWindow();
         Server server = new Server(repository, serverView);
         serverView.setServer(server);
-        ClientView clientView = new ClientGUI(server);
-        ClientView clientView1 = new ClientGUI(server);
+        new ClientGUI(server);
+        new ClientGUI(server);
     }
 }

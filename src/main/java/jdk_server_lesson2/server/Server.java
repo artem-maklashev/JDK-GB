@@ -9,7 +9,7 @@ public class Server {
     private final Repository repository;
     ServerView serverView;
 
-    private List<Client> clientList;
+    private final List<Client> clientList;
     private boolean work;
 
     public Server(Repository repository, ServerView serverView) {
@@ -34,12 +34,14 @@ public class Server {
             return false;
         }
         this.clientList.add(client);
+        appendLog(client.getName() + " подключился" );
         return true;
     }
 
     public void disconnectUser (Client client) {
         clientList.remove(client);
         if (client != null) {
+            appendLog(client.getName() + " отключился");
             client.disconnect();
 
         }
@@ -68,11 +70,7 @@ public class Server {
     }
 
     public String getHistory(){
-        String log = repository.readLog();
-        return log;
-    }
-    public List<Client> getClientList() {
-        return clientList;
+        return repository.readLog();
     }
 
     public boolean serverStatus(){
