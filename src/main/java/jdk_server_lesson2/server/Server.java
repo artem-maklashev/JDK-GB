@@ -2,18 +2,20 @@ package jdk_server_lesson2.server;
 
 import jdk_server_lesson2.client.Client;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Server {
-    private ServerView serverView;
-    private Repository repository;
+    private final Repository repository;
+    ServerView serverView;
 
     private List<Client> clientList;
     private boolean work;
 
-    public Server(Repository repository) {
+    public Server(Repository repository, ServerView serverView) {
         this.repository = repository;
-        this.serverView =
+        this.serverView = serverView;
+        this.clientList = new ArrayList<>();
     }
 
     public void startServer(){
@@ -22,9 +24,7 @@ public class Server {
 
     public void stopServer(){
         work = false;
-        for (Client clientGUI: clientList){
-            disconnectUser(clientGUI);
-        }
+        for (int i = 0; i < clientList.size(); i++) disconnectUser(clientList.get(i));
     }
     public boolean connectUser(Client client){
         if (!work) {
@@ -38,6 +38,7 @@ public class Server {
         clientList.remove(client);
         if (client != null) {
             client.disconnect();
+
         }
     }
     public void sendMessage(String text) {
@@ -72,5 +73,13 @@ public class Server {
 
     public boolean serverStatus(){
         return work;
+    }
+
+    public int getX() {
+        return 0;
+    }
+
+    public int getY() {
+        return 0;
     }
 }

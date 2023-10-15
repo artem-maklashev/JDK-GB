@@ -1,5 +1,11 @@
 package jdk_server_lesson2.server;
 
 public interface ServerView {
-    Storage getHistory();
+    void setServer(Server server);
+    void appendLog(String text);
+
+    int getX();
+    int getY();
+
+
 }

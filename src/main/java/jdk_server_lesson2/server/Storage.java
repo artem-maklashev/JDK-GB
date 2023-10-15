@@ -4,7 +4,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 
 public class Storage implements Repository{
-    public static final String LOG_PATH = "src/server/log.txt";
+    public static final String LOG_PATH = "src/main/java/jdk_server_lesson2/server/log.txt";
     @Override
     public String readLog() {
         StringBuilder stringBuilder = new StringBuilder();

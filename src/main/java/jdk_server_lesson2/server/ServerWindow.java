@@ -5,17 +5,15 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ServerWindow extends JFrame {
+public class ServerWindow extends JFrame implements ServerView {
     public static final int WIDTH = 400;
     public static final int HEIGHT = 300;
-    private Repository repository;
+    Server server;
 
     JButton btnStart, btnStop;
     JTextArea log;
-    private final Server server;
 
-    public ServerWindow(Repository repository){
-        this.server  = new Server(repository);
+    public ServerWindow(){
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(WIDTH, HEIGHT);
         setResizable(false);
@@ -24,9 +22,11 @@ public class ServerWindow extends JFrame {
 
         createPanel();
 
-        setVisible(true);
+                setVisible(true);
     }
-    private void appendLog(String text){
+
+    @Override
+    public void appendLog(String text){
         log.append(text + "\n");
     }
 
@@ -69,4 +69,20 @@ public class ServerWindow extends JFrame {
         panel.add(btnStop);
         return panel;
     }
+
+    @Override
+    public int getX() {
+        return this.getLocation().x;
+    }
+    @Override
+    public int getY() {
+        return this.getLocation().y;
+    }
+
+
+    @Override
+    public void setServer(Server server) {
+        this.server = server;
+    }
+
 }
