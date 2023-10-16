@@ -1,4 +1,4 @@
-package seminar.ex2;
+package jdk_lesson3.class_work;
 
 import java.util.Arrays;
 
