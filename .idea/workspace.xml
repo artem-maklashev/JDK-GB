@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48951abb-b4e3-4de9-98dd-821c1a4961a5" name="Changes" comment="create lesson3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/jdk_lesson3/homework/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jdk_lesson3/homework/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jdk_lesson3/homework/MyArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jdk_lesson3/homework/Pair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jdk_lesson3/class_work/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdk_lesson3/class_work/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jdk_lesson3/class_work/MyArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdk_lesson3/class_work/MyArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jdk_lesson3/class_work/MyClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdk_lesson3/class_work/MyClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jdk_lesson3/class_work/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdk_lesson3/class_work/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jdk_lesson3/homework/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdk_lesson3/homework/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,13 +32,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "HW3"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;HW3&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jdk_lesson3.homework.Main" />
