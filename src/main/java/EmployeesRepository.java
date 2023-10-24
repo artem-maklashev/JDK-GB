@@ -1,11 +1,14 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 public class EmployeesRepository {
     private final List<Employee> employeeRepository;
 
-    public EmployeesRepository(List<Employee> employeeRepository) {
-        this.employeeRepository = employeeRepository;
+    public EmployeesRepository() {
+        this.employeeRepository = new ArrayList<>();
     }
 
     public List<Employee> findByExperience(float experience) {
@@ -20,24 +23,21 @@ public class EmployeesRepository {
     }
 
     public List<String> findPhoneNumbersByName(String name) {
-        List<String> result = new ArrayList<>();
-        for (Employee e : employeeRepository) {
-            if (e.getName().equals(name)) {
-                result.addAll(e.getPhoneNumbers());
-            }
-        }
-        return result;
+        return employeeRepository.stream()
+                .filter(e -> e.getName().equals(name))
+                .flatMap(e -> e.getPhoneNumbers().stream())
+                .collect(Collectors.toList());
+//        List<String> result = new ArrayList<>();
+//        for (Employee e : employeeRepository) {
+//            if (e.getName().equals(name)) {
+//                result.addAll(e.getPhoneNumbers());
+//            }
+//        }
+//        return result;
     }
 
     public Employee findByServiceNumber(String serviceNumber) {
         return employeeRepository.stream().filter(e -> e.getServiceNumber().equals(serviceNumber)).findFirst().orElse(null);
-        //        for (Employee e :
-//                employeeRepository) {
-//            if (e.getServiceNumber().equals(serviceNumber)) {
-//                return e;
-//            }
-//        }
-//        return null;
     }
 
     public void addEmployee(Employee employee) {
@@ -53,5 +53,9 @@ public class EmployeesRepository {
             sb.append("\n");
         }
         return sb.toString();
+    }
+
+    public List<Employee> getEmployeeRepository() {
+        return employeeRepository;
     }
 }

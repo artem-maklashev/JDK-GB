@@ -4,9 +4,10 @@ import java.util.List;
 import java.util.Set;
 
 public class Employee {
-    private String serviceNumber, name;
-    private Set<String> phoneNumbers;
-    private Float experience;
+    private final String serviceNumber;
+    private final String name;
+    private final Set<String> phoneNumbers;
+    private final Float experience;
 
     public Employee(String serviceNumber, String name, float experience) {
         this.serviceNumber = serviceNumber;
