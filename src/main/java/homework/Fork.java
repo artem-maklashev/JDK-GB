@@ -1,23 +1,22 @@
 package homework;
 
-import java.util.concurrent.Semaphore;
+import java.util.concurrent.CountDownLatch;
 
 public class Fork {
-    boolean inUse = false;
+    boolean isInUse;
     int id;
 
-    public Fork(int id){
+    public Fork(int id) {
         this.id = id;
     }
 
-    public  synchronized void take(){
-        inUse = true;
-    }
-    public synchronized void put(){
-        inUse = false;
-    }
-    public boolean isInUse(){
-        return inUse;
+    public void take() {
+        isInUse = true;
     }
 
+
+    public void put() {
+        isInUse = false;
+
+    }
 }
