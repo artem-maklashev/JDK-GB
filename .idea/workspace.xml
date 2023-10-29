@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48951abb-b4e3-4de9-98dd-821c1a4961a5" name="Changes" comment="create lesson3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/jdk_lesson3/homework/MyArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jdk_lesson3/homework/Pair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+    <list default="true" id="48951abb-b4e3-4de9-98dd-821c1a4961a5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework/Fork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework/Philosopher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework/Philosopher2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework/Service.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jdk_lesson3/homework/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdk_lesson3/homework/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +23,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -36,16 +40,29 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;HW3&quot;
+    &quot;git-widget-placeholder&quot;: &quot;HW5&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.homework.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jdk_lesson3.homework.Main" />
+      <option name="MAIN_CLASS_NAME" value="ex3.Main" />
       <module name="JDK-GB" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jdk_lesson3.homework.*" />
+          <option name="PATTERN" value="ex3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="homework.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homework.Main" />
+      <module name="JDK-GB" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="homework.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -55,7 +72,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.homework.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -69,19 +86,21 @@
       <option name="presentableId" value="Default" />
       <updated>1697290895494</updated>
     </task>
-    <task id="LOCAL-00001" summary="create lesson3">
-      <option name="closed" value="true" />
-      <created>1697469638158</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1697469638158</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="create lesson3" />
-    <option name="LAST_COMMIT_MESSAGE" value="create lesson3" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/homework/Philosopher2.java</url>
+          <line>52</line>
+          <properties class="homework.Philosopher2" method="run">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
