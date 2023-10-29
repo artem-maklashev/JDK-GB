@@ -5,76 +5,55 @@ import java.util.concurrent.Semaphore;
 
 public class Philosopher extends Thread {
     public static final Random random = new Random();
-    Fork leftFork;
-    Fork rightFork;
+    final Fork leftFork;
+    final Fork rightFork;
     String name;
-    Semaphore semaphore;
 
-    public Philosopher(Fork leftFork, Fork rightFork, String name, Semaphore semaphore) {
+
+    public Philosopher(Fork leftFork, Fork rightFork, String name) {
         this.leftFork = leftFork;
         this.rightFork = rightFork;
         this.name = name;
-        this.semaphore = semaphore;
     }
 
     @Override
     public void run() {
         int count = 0;
         while (count < 3) {
-            try {
-
-                if (takeFork(leftFork, rightFork)) {
-                    System.out.println(name + " взял вилки " + (count + 1) + " раз");
+            synchronized (leftFork) {
+                System.out.println(name + " взял вилку " + leftFork.id);
+                synchronized (rightFork) {
+                    System.out.println(name + " взял вилку " + rightFork.id);
                     eat();
                     count++;
-                    rest();
-                }
+                    if (count == 3) {
+                        System.out.println(name.toUpperCase() + " ПОЕЛ " + count + " РАЗ(А)");
+                    }
+                    System.out.println(name + " положил вилку " + rightFork.id);
 
+                }
+                System.out.println(name + " положил вилку " + leftFork.id);
+            }
+
+            rest();
+        }
+    }
+        private void eat () {
+            try {
+                System.out.println(name + " ест");
+                Thread.sleep(random.nextInt(200, 1000));
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
         }
-        System.out.println(name + " поел " + count + " раз");
-    }
 
-    private void eat() {
-        try {
-            System.out.println(name + " ест");
-            Thread.sleep(random.nextInt(200, 1000));
-            putFork(leftFork, rightFork);
-            System.out.println(name + " отдал вилки");
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    private boolean takeFork(Fork leftFork, Fork rightFork) throws InterruptedException {
-         semaphore.acquire();
-            if (!leftFork.isInUse && !rightFork.isInUse) {
-                leftFork.take();
-                rightFork.take();
-                semaphore.release();
-                return true;
+        public void rest () {
+            try {
+                System.out.println(name + " думает");
+                Thread.sleep(random.nextInt(200, 1000));
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
             }
-            semaphore.release();
-            return false;
         }
 
-
-    private void putFork(Fork leftFork, Fork rightrtFork) throws InterruptedException {
-        semaphore.acquire();
-            leftFork.put();
-            rightrtFork.put();
-        semaphore.release();
     }
-
-    public void rest() {
-        try {
-            System.out.println(name + " спит");
-            Thread.sleep(random.nextInt(200, 1000));
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-}

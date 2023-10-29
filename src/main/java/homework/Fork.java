@@ -19,4 +19,8 @@ public class Fork {
         isInUse = false;
 
     }
+
+    public boolean isInUse() {
+        return isInUse;
+    }
 }

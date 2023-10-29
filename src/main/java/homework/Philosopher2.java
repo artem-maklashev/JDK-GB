@@ -21,7 +21,7 @@ public class Philosopher2 extends Thread{
     public void eat() throws InterruptedException {
         int count = 0;
         while (count < 3) {
-            if (!leftFork.isInUse() && !rightFork.isInUse()) {
+            if (!leftFork.isInUse && !rightFork.isInUse) {
 //                semaphore.acquire();
                 synchronized (leftFork) {
                     leftFork.take();

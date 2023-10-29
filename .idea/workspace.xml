@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48951abb-b4e3-4de9-98dd-821c1a4961a5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/homework/Fork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homework/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homework/Philosopher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homework/Philosopher2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homework/Service.java" afterDir="false" />
+    <list default="true" id="48951abb-b4e3-4de9-98dd-821c1a4961a5" name="Changes" comment="hw5 in progress 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homework/Fork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homework/Fork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homework/Philosopher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homework/Philosopher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homework/Philosopher2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homework/Philosopher2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,14 +84,38 @@
       <option name="presentableId" value="Default" />
       <updated>1697290895494</updated>
     </task>
+    <task id="LOCAL-00001" summary="hw5 in progress 2">
+      <option name="closed" value="true" />
+      <created>1698587265427</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698587265427</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="hw5 in progress 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw5 in progress 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/homework/Philosopher2.java</url>
-          <line>52</line>
+          <line>54</line>
           <properties class="homework.Philosopher2" method="run">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
